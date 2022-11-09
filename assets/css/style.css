@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?27939137');
+    src: url('../fonts/fontello.eot?27939137#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?27939137') format('woff2'),
+         url('../fonts/fontello.woff?27939137') format('woff'),
+         url('../fonts/fontello.ttf?27939137') format('truetype'),
+         url('../fonts/fontello.svg?27939137#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?27939137#fontello') format('svg');
+    }
+  }
+  */
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-hand-grab-o:before { content: '\f255'; } /* '' */
+  .icon-hand-paper-o:before { content: '\f256'; } /* '' */
+  .icon-hand-scissors-o:before { content: '\f257'; } /* '' */
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #0A1128;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+section {
+  width: 50vw;
+  height: 50vh;
+  margin: 5rem 0 3rem;
+}
+
+article {
+  margin: 3rem 0;
+}
+
+form, .points {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2rem 5rem;
+}
+
+.points {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#rundenText, #meldung {
+  font-size: 2rem;
+}
+
+.name1 {
+  position: absolute;
+  top: 30%;
+  left: -20px;
+  background-color: #F2C57C;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.name2 {
+  position: absolute;
+  top: 30%;
+  right: -20px;
+  background-color: #EF6F6C;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+i:hover {
+  background-color: #7FB685;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #EB4B98;
+  border: none;
+  color: white;
+}

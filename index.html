@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <section>
+        <h1>Rock, Paper, Scissors</h1>
+        <article class="rounds">
+            <h2>How many rounds?</h2>
+            <form action="" onsubmit="return false">
+                <div id="roundInputs" class="row">
+                    <div class="col-12 col-lg-6">
+                        <input type="radio" name="round" id="five" value="5">
+                        <label for="five">5</label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="radio" name="round" id="ten" value="10">
+                        <label for="five">10</label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="radio" name="round" id="fiveteen" value="15">
+                        <label for="five">15</label>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="radio" name="round" id="twenty" value="20">
+                        <label for="five">20</label>
+                    </div>
+                </div>
+                <span id="rundenText"></span>           
+            </form>
+        </article>
+        <article class="points">
+            <span class="name1">Player</span>
+            <span id="scorePlayer">0</span>
+            :
+            <span class="name2">Comp</span>
+            <span id="scoreComp">0</span>
+        </article>
+        <article id="meldung">
+
+        </article>
+        <article class="play">
+            <h2>Let´s play</h2>
+            <div class="row">
+                <div class="col-12 col-lg-4"><i id="rock" class="icon-hand-grab-o"></i></div>
+                <div class="col-12 col-lg-4"><i id="paper" class="icon-hand-paper-o"></i></div>
+                <div class="col-12 col-lg-4"><i id="scissors" class="icon-hand-scissors-o"></i></div>
+            </div>
+        </article>
+        <article class="return">
+            <button type="button" onClick="window.location.reload()">restart</button>
+        </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
